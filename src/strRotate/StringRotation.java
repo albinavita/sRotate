@@ -8,6 +8,9 @@ public class StringRotation {
     public static String input = "animal";
 
     public static void main(String[] args) {
+        for (String line : scrollingText(input)){
+            System.out.println(line);
+        }
         System.out.println(Arrays.toString(scrollingText(input)));
         System.out.println(Arrays.toString(scrollingText_stream(input)));
     }
